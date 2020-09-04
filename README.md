@@ -1,15 +1,27 @@
 # electron-vue-demo
 
 ## Prepare Environment For Chinese Developer
-### Windows
+### set registry to taobao
 ```
 npm config set registry https://registry.npm.taobao.org
+```
+
+### Windows
+```
 npm config set ELECTRON_MIRROR http://npm.taobao.org/mirrors/electron/
 ```
 
 ### Mac
+
+- bash
+Add 
+```bash
+echo "export ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/" >> ~/.bash_profile
 ```
-npm config set registry https://registry.npm.taobao.org
+
+.zsh
+```zsh
+echo "export ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/" >> ~/.zshrc
 ```
 
 
@@ -18,14 +30,20 @@ npm config set registry https://registry.npm.taobao.org
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development Vue
 ```
 npm run serve
 ```
 
+### Compiles and hot-reloads for development Vue in Electron
+```
+npm run electron:serve
+```
+
+
 ### Compiles and minifies for production
 ```
-npm run build
+npm run electron:build
 ```
 
 ### Lints and fixes files
