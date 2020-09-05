@@ -14,14 +14,15 @@ npm config set ELECTRON_MIRROR http://npm.taobao.org/mirrors/electron/
 ### Mac
 
 - bash
-Add 
 ```bash
 echo "export ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/" >> ~/.bash_profile
+. ~/.bash_profile
 ```
 
-.zsh
+- zsh
 ```zsh
 echo "export ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/" >> ~/.zshrc
+. ~/.ashrc
 ```
 
 
